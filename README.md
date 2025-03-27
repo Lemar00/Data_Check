@@ -1,6 +1,7 @@
 # Data Check
 
-**Data Check** est une application développée en Python avec Flask permettant de télécharger des fichiers CSV ou Excel, d'analyser les données qu'ils contiennent et de proposer des visualisations graphiques adaptées. Ce projet est conçu pour aider à l'analyse des données en générant des graphiques utiles et des recommandations sur la meilleure manière de visualiser les informations.
+**Data Check** est une application développée en Python avec Flask permettant de télécharger des fichiers CSV ou Excel, d'analyser les données qu'ils contiennent et de proposer des visualisations graphiques adaptées.  
+Ce projet est conçu pour aider à l'analyse des données en générant des graphiques utiles et des recommandations sur la meilleure manière de visualiser les informations.
 
 
 ## Aperçu de l'application
@@ -16,49 +17,62 @@
 
 ## Prérequis
 
-Avant de commencer, assurez-vous que vous avez installé les éléments suivants :
+Avant de commencer, assurez-vous que vous avez installé les éléments suivants :  
 
-- **Python 3.x** (recommandé : 3.8 ou plus récent)
+- **Python 3.x** (recommandé : 3.8 ou plus récent)  
 - **Pip** (gestionnaire de paquets Python)
+  
+⚙️ Installation
+### 1️⃣ Cloner le dépôt  
+```bash
+git clone https://github.com/Lemar00/Data_Check.git
+cd Data_Check
+```
 
-## Installation
-
-1. Clonez le dépôt sur votre machine locale :
-
-   ```bash
-   git clone https://github.com/Lemar00/data-check.git
-Allez dans le répertoire du projet :
-cd data-check
-Créez un environnement virtuel (facultatif mais recommandé) :
+2️⃣ Créer un environnement virtuel (optionnel mais recommandé)  
+```bash
 python -m venv venv
-Activez l'environnement virtuel :
-Sur Windows :
-.\venv\Scripts\activate
-Sur macOS/Linux :
+```
+3️⃣ Activer l'environnement virtuel  
+
+➜ Sur macOS/Linux  
+```bash
 source venv/bin/activate
-Installez les dépendances requises :
+```
+4️⃣ Installer les dépendances  
+```bash
 pip install -r requirements.txt
-Lancer l'application
-
-Une fois les dépendances installées, lancez l'application Flask :
+```  
+🚀 Lancer l'application  
+Après l'installation, démarrez l'application Flask avec :
+```bash
 python app.py
-Ouvrez un navigateur et accédez à l'application via :
-http://127.0.0.1:5000
-Utilisation
+```  
+Puis ouvrez votre navigateur et accédez à :  
+🔗 http://127.0.0.1:5000  
 
-Téléchargez un fichier CSV ou Excel en utilisant le formulaire sur la page principale.
-L'application analysera le fichier et vous proposera des suggestions de visualisation basées sur le contenu du fichier (histogrammes, graphiques en barres, scatter plots, etc.).
-Sélectionnez l'une des suggestions pour afficher un graphique interactif.
-Technologies utilisées
+💡 Utilisation  
+1️⃣ Téléchargez un fichier CSV ou Excel via l'interface.  
+2️⃣ L'application analyse les données et propose des graphiques adaptés :  
 
-Flask : Framework web Python pour le backend.
-Pandas : Bibliothèque Python pour la manipulation des données.
-Plotly : Bibliothèque pour la création de graphiques interactifs.
-Werkzeug : Utilisé pour sécuriser les noms de fichiers et gérer les uploads.
-Contributions
+Histogrammes 📊  
+Graphiques en barres 📈  
+Scatter plots 🔵  
+Box plots 📦  
 
-Les contributions sont les bienvenues ! Si vous avez des idées d'améliorations ou des corrections de bugs, n'hésitez pas à ouvrir une issue ou à soumettre une pull request.
+3️⃣ Sélectionnez une suggestion pour afficher un graphique interactif.  
 
-Licence
+🛠️ Technologies utilisées  
+Flask : Framework web pour le backend.  
+Pandas : Manipulation et analyse des données  
+Plotly : Création de graphiques interactifs.  
+Werkzeug : Gestion des fichiers uploadés.  
 
-Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus d'informations.
+👨‍💻 Contributions  
+Les contributions sont les bienvenues ! 🚀  
+Si vous avez des idées d'amélioration ou des corrections de bugs :  
+Ouvrez une issue 📝  
+Soumettez une pull request 🔄  
+
+📜 Licence  
+Ce projet est sous licence MIT. Consultez le fichier LICENSE pour plus d'informations.
