@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyse de données - Flask</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .file-upload {
+            margin-bottom: 20px;
+        }
+        #plots {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Analyse de Données Intelligent</h1>
+    </header>
+    
+    <div class="container">
+        <h2>Téléchargez un fichier CSV ou Excel</h2>
+        <form id="upload-form" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".csv, .xlsx" required>
+            <button type="submit">Analyser le fichier</button>
+        </form>
+
+        <div id="suggestions"></div>
+        <div id="plots"></div>
+    </div>
+
+    <script>
+        document.getElementById("upload-form").onsubmit = async function(event) {
+            event.preventDefault();
+            
+            const formData = new FormData();
+            formData.append("file", document.querySelector("input[type=file]").files[0]);
+
+            const response = await fetch("/upload", {
+                method: "POST",
+                body: formData,
+            });
+            const data = await response.json();
+
+            if (data.error) {
+                alert(data.error);
+                return;
+            }
+
+            const suggestionsDiv = document.getElementById("suggestions");
+            suggestionsDiv.innerHTML = "<h3>Suggérer des visualisations :</h3>";
+
+            data.suggestions.forEach((suggestion) => {
+                const btn = document.createElement("button");
+                btn.textContent = `Afficher un ${suggestion.type} pour ${suggestion.column || suggestion.columns.join(' et ')}`;
+                btn.onclick = function() {
+                    showPlot(suggestion, data.filename);
+                };
+                suggestionsDiv.appendChild(btn);
+            });
+        };
+
+        async function showPlot(suggestion, filename) {
+            const response = await fetch("/plot", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    type: suggestion.type,
+                    column: suggestion.column,
+                    columns: suggestion.columns,
+                    filename: filename,
+                }),
+            });
+            const data = await response.json();
+            if (data.error) {
+                alert(data.error);
+                return;
+            }
+
+            const plotDiv = document.getElementById("plots");
+            const plot = document.createElement("div");
+            plot.id = "plot";
+            plotDiv.innerHTML = '';  
+            plotDiv.appendChild(plot);
+
+            Plotly.newPlot(plot, data.data, data.layout);
+        }
+    </script>
+</body>
+</html>

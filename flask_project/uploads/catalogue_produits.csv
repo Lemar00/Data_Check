@@ -1,0 +1,81 @@
+Produit_ID,Nom,Catégorie,Prix
+1,iPhone 13,Smartphones,2664.9
+2,Samsung Galaxy S22,Smartphones,261.82
+3,Techno Camon 20,Smartphones,923.92
+4,iPhone 14 Pro,Smartphones,334.86
+5,iPhone 11 Pro Max,Smartphones,2419.43
+6,MacBook Pro,Ordinateurs,2489.88
+7,Dell XPS 13,Ordinateurs,912.29
+8,HP Spectre x360,Ordinateurs,346.74
+9,Lenovo ThinkPad X1,Ordinateurs,813.83
+10,Asus ZenBook 14,Ordinateurs,2094.88
+11,PS5,Jeux Vidéo,399.78
+12,Xbox Series X,Jeux Vidéo,1756.48
+13,Nintendo Switch,Jeux Vidéo,669.14
+14,Gaming PC,Jeux Vidéo,518.53
+15,VR Headset,Jeux Vidéo,1284.63
+16,Cahier A4,Fournitures scolaires,1617.55
+17,Stylos Bic,Fournitures scolaires,1968.03
+18,Calculatrice Sharp,Fournitures scolaires,2576.24
+19,Calculatrice Casio,Fournitures scolaires,1397.37
+20,Trousse scolaire,Fournitures scolaires,2279.84
+21,Crème solaire,Été,2870.35
+22,Maillot de bain homme,Été,2438.98
+23,Maillot de bain femme,Été,2782.07
+24,Lunettes de soleil,Été,2749.79
+25,Chapeau de paille,Été,1826.44
+26,Aspirateur Dyson,Électroménager,1737.53
+27,Cafetière Nespresso,Électroménager,2383.09
+28,Réfrigérateur Samsung,Électroménager,1001.65
+29,Lave-vaisselle Bosch,Électroménager,2375.48
+30,Four micro-ondes Whirlpool,Électroménager,1057.97
+31,Parfum Dior,Beauté,2618.36
+32,Fond de teint Fenty Beauty,Beauté,1694.8
+33,Rouge à lèvres MAC,Beauté,1391.75
+34,Crème hydratante Nivea,Beauté,199.1
+35,Shampooing Nova,Beauté,2221.9
+36,Vélo,Sport,540.45
+37,Tapis de yoga,Sport,355.98
+38,Haltères 10kg,Sport,2895.57
+39,Chaussures de running Nike,Sport,1951.86
+40,Montre connectée Garmin,Sport,1743.86
+41,Batterie de voiture,Automobile,400.08
+42,Pneus Michelin,Automobile,455.8
+43,Liquide frein,Automobile,859.23
+44,Autoradio,Automobile,589.25
+45,Kit entretien voiture,Automobile,917.36
+46,Table en bois,Maison,2743.95
+47,Canapé 3 places,Maison,2111.82
+48,Lampe de chevet,Maison,1402.86
+49,Rideaux occultants,Maison,1916.02
+50,Étagère murale,Maison,1747.89
+51,Coran,Religion,611.21
+52,Bible,Religion,383.19
+53,Tapis de prière,Religion,2608.01
+54,Chapelet,Religion,411.34
+55,jelbab,Religion,1482.8
+56,Chocolat,Alimentation,563.94
+57,Café bio,Alimentation,694.56
+58,Pâtes artisanales,Alimentation,538.8
+59,Huile d'olive,Alimentation,2397.02
+60,Jus Presséa,Alimentation,2527.48
+61,Guitare acoustique,Musique,334.08
+62,Piano numérique,Musique,762.85
+63,Casque audio Bose,Musique,2185.75
+64,Enceinte Bluetooth JBL,Musique,998.21
+65,Microphone Shure,Musique,367.66
+66,Salon de jardin,Jardin,2169.95
+67,Barbecue Weber,Jardin,2321.46
+68,Tondeuse à gazon,Jardin,1635.66
+69,Plantes d'intérieur,Jardin,1253.14
+70,Hamac suspendu,Jardin,1336.39
+71,Poussette Chicco,Bébé,1828.06
+72,Siège auto,Bébé,512.16
+73,Couches bébé,Bébé,992.99
+74,Biberon Avent,Bébé,2822.77
+75,Jouet Spiderman,Bébé,422.01
+76,Drone DJI,High-Tech,823.44
+77,Écran 4K,High-Tech,2694.88
+78,Casque VR Oculus,High-Tech,171.29
+79,Tablette iPad,High-Tech,1771.95
+80,Souris gamer Logitech,High-Tech,2074.81
